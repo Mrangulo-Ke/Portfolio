@@ -14,7 +14,7 @@ const opacityForBlock = (sectionProgress, blockNO) => {
 };
 export const ScrollContext = createContext({ scrollY: 1 });
 
-export default function Skills() {
+export default function About() {
   const { scrollY } = useContext(ScrollContext);
   const refContainer = useRef(null);
 
@@ -38,16 +38,16 @@ export default function Skills() {
     <div
       ref={refContainer}
       id="about"
-      className="bg-black text-white w-full md:h-screen p-2 flex items-center py-16"
+      className="bg-black text-white w-full h-screen p-2 flex items-center py-16"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-2xl lg:text-3xl tracking-widest ">
+          <p className="uppercase text-3xl lg:text-4xl tracking-widest ">
             About Me
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <div className="py-2 text-gray-200 leading-[1.15] text-xl">
-            / / I basically a javascript developer.
+          <div className="py-2 text-gray-200 leading-[1.15] text-xl lg:text-2xl">
+            &ldquo;I basically a javascript developer&rdquo;
           </div>
           <span
             className={s.skillText}
@@ -59,7 +59,7 @@ export default function Skills() {
             freelancer platform for the past two &#38; half years until April,
             2022.
             <span
-              className={`${s.skillText} inline-block after:content-['_']`}
+              className={`${s.skillText} inline-block after:content-['_'] text-xl lg:text-2xl`}
               style={{
                 opacity: opacityForBlock(progress, 1),
               }}
@@ -87,7 +87,10 @@ export default function Skills() {
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div
+          className="hidden w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl items-center 
+        justify-center p-4 hover:scale-105 ease-in duration-300 md:flex"
+        >
           <Image src={AboutImg} className="rounded-xl" alt="/" />
         </div>
       </div>

@@ -19,27 +19,29 @@ import propertyImg from '../public/assets/projects/property.jpg';
 import cryptoImg from '../public/assets/projects/crypto.jpg';
 import netflixImg from '../public/assets/projects/netflix.jpg';
 import twitchImg from '../public/assets/projects/twitch.jpg';
-import { HiOutlineChevronDown } from 'react-icons/hi';
-import Skills from '../components/skills';
+import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
+import About from '../components/About';
 
 export default function Home() {
   return (
     <Layout title="Mwangeka Patrick">
-      <div id="home" className="w-full h-screen text-center">
+      <div id="home" className="w-full h-screen flex flex-col justify-center">
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-          <div>
+          <div className="text-center">
             <p className="uppercase text-sm tracking-widest text-gray-600">
-              LET&#39;S BUILD SOMETHING TOGETHER
+              LET&#39;S Code SOMETHING Great TOGETHER
             </p>
-            <h1 className="py-4 text-gray-700">
+            <h1 className="py-4 text-veryDarkBlue drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] font-bold text-4xl lg:text-5xl">
               Hi, I&#39;m <span className="text-[#5651e5]"> Patrick</span>
             </h1>
-            <h1 className="py-2 text-gray-700">A Full-Stack Web Developer</h1>
-            <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
-              I’m love building responsive web applications mostly using
+            <h1 className="py-2 text-veryDarkBlue drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] font-bold text-4xl lg:text-5xl">
+              A Full-Stack Web Developer
+            </h1>
+            <p className="py-4 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-gray-600 sm:max-w-[70%] m-auto text-xl lg:text-2xl">
+              I love building responsive web applications mostly using
               javascript with its libiraries &#38; frameworks .
             </p>
-            <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+            <div className="flex items-center justify-between max-w-[330px] m-auto py-6">
               <a
                 href="https://www.linkedin.com/in/clint-briley-50056920a/"
                 target="_blank"
@@ -69,22 +71,22 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-            <div className="flex justify-center py-12">
-              <Link href="/#about">
-                <a>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <HiOutlineChevronDown
-                      className="text-[#5651e5]"
-                      size={30}
-                    />
-                  </div>
-                </a>
-              </Link>
-            </div>
           </div>
         </div>
+        <div className="flex flex-grow-0 justify-center bottom-0">
+          <Link href="/#about">
+            <a>
+              <div className="p-4 cursor-pointer hover:scale-110 ease-in transition-all duration-300">
+                <HiOutlineChevronDoubleDown
+                  className="text-[#5651e5]"
+                  size={40}
+                />
+              </div>
+            </a>
+          </Link>
+        </div>
       </div>
-      <Skills />
+      <About />
       <div id="skills" className="w-full lg:h-screen p-2">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
           <p className="text-xl tracking-widest uppercase text-[#5651e5]">
