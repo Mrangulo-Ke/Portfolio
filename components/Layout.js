@@ -5,12 +5,14 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { Fragment } from 'react';
-import Logo from '../public/assets/mylogo.svg';
 import { useEffect } from 'react';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { SocialLink } from './Links';
+import { FooterLink, SocialLink } from './Links';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+
+import Logo from '../public/assets/mwangekablacklogo.svg';
+import LogoWhite from '../public/assets/mwangekawhitelogo.svg';
 
 export default function Layout({ title, children }) {
   const [nav, setNav] = useState(false);
@@ -49,18 +51,18 @@ export default function Layout({ title, children }) {
           <nav
             className={`${
               shadow ? ' shadow-xl ease-in-out duration-300' : ''
-            } fixed w-full top-0 z-[100] h-20  bg-grayishwhite-0 `}
+            } fixed w-full top-0 z-[100] h-20  bg-white`}
           >
             <div className=" h-20 items-center justify-between container mx-auto px-6 pt-5 hidden md:flex">
               {/* Logo */}
-              <div className="pt-2">
+              <div className="pt-2 ">
                 <Link href="/">
                   <Image
                     src={Logo}
                     alt=""
                     width="125"
                     height="50"
-                    className="cursor-pointer"
+                    className="cursor-pointer drop-shadow-2xl "
                   ></Image>
                 </Link>
               </div>
@@ -244,7 +246,7 @@ export default function Layout({ title, children }) {
                           </p>
                           <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                             <SocialLink href="https://www.linkedin.com/in/clint-briley-50056920a/">
-                              <AiOutlineMail />
+                              <FaLinkedinIn />
                             </SocialLink>
                             <SocialLink href="https://github.com/Mrangulo-Ke">
                               <FaGithub />
@@ -270,13 +272,67 @@ export default function Layout({ title, children }) {
 
         {/* Footer */}
         <footer className="bg-grayishwhite-0">
-          <div className="justify-center px-6 py-10 mx-auto ">
-            <div className="text-center text-veryDarkBlue text-sm block">
-              Copyright &copy; {new Date().getFullYear()} , all rights reserved,
-              Mwangeka Patrick.
+          <div
+            className="container flex flex-col-reverse justify-between px-6 
+          py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+          >
+            <div
+              className="flex flex-col-reverse items-center justify-between space-y-12 
+          md:flex-col md:space-y-0 md:items-start"
+            >
+              <div
+                className="mx-auto my-6 text-center text-veryDarkBlue
+               text-xs md:hidden"
+              >
+                Copyright &copy; {new Date().getFullYear()} , all rights
+                reserved, Mwangeka Patrick.
+              </div>
+              <div>
+                <Image src={Logo} alt="" className="h-10"></Image>
+              </div>
+
+              <div className="flex justify-center space-x-2">
+                <FooterLink href="https://www.linkedin.com/in/clint-briley-50056920a/">
+                  <FaLinkedinIn />
+                </FooterLink>
+                <FooterLink href="https://github.com/Mrangulo-Ke">
+                  <FaGithub />
+                </FooterLink>
+                <FooterLink href="/#contact">
+                  <AiOutlineMail />
+                </FooterLink>
+                <FooterLink href="./cv">
+                  <BsFillPersonLinesFill />
+                </FooterLink>
+              </div>
+            </div>
+            <div className="flex justify-around space-x-32">
+              <div className="flex flex-col space-y-3 text-veryDarkBlue text-xs md:text-sm">
+                <Link href="/">
+                  <a className="hover:text-brightRed">Home</a>
+                </Link>
+                <Link href="/#about">
+                  <a className="hover:text-brightRed">About</a>
+                </Link>
+                <Link href="/#skills">
+                  <a className="hover:text-brightRed">Skills</a>
+                </Link>
+                <Link href="/#projects">
+                  <a className="hover:text-brightRed">Projects</a>
+                </Link>
+                <Link href="./cv">
+                  <a className="hover:text-brightRed">Cv</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3 text-veryDarkBlue text-xs md:text-sm">
+                <a className="text-">Mwangeka Patrick</a>
+                <a>Kisumu, Kenya</a>
+                <a>Full-Stack Developer</a>
+                <a>+254113644484</a>
+              </div>
             </div>
           </div>
-          <div className="flex justify-center py-12">
+          {/* <div className="justify-center py-2 hidden md:flex">
             <Link href="/">
               <a>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -287,6 +343,11 @@ export default function Layout({ title, children }) {
                 </div>
               </a>
             </Link>
+          </div> */}
+          <div className="justify-center">
+            <div className="hidden text-center text-veryDarkBlueer text-sm md:block">
+              Copyright &copy; 2022, All Rights Reserved.
+            </div>
           </div>
         </footer>
       </div>

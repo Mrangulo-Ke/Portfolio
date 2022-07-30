@@ -15,17 +15,24 @@ import Tailwind from '../public/assets/skills/tailwind.png';
 import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png';
-import propertyImg from '../public/assets/projects/property.jpg';
+import pizzaApp from '../public/assets/projects/pizzaapp.png';
 import cryptoImg from '../public/assets/projects/crypto.jpg';
 import netflixImg from '../public/assets/projects/netflix.jpg';
+import mwangekaPortfolio from '../public/assets/projects/mwangeka.png';
+import gadgetMasters from '../public/assets/projects/gadgetmasters.png';
 import twitchImg from '../public/assets/projects/twitch.jpg';
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
 import About from '../components/About';
+import { Skill } from '../components/Skill';
+import { ProjectBackground } from '../components/ProjectTile';
 
 export default function Home() {
   return (
     <Layout title="Mwangeka Patrick">
-      <div id="home" className="w-full h-screen flex flex-col justify-center">
+      <div
+        id="home"
+        className="w-full min-h-screen flex flex-col justify-center"
+      >
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
           <div className="text-center">
             <p className="uppercase text-sm tracking-widest text-gray-600">
@@ -73,10 +80,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-grow-0 justify-center bottom-0">
+        <div className="hidden justify-center bottom-0 md:flex">
           <Link href="/#about">
             <a>
-              <div className="p-4 cursor-pointer hover:scale-110 ease-in transition-all duration-300">
+              <div className="p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleDown
                   className="text-[#5651e5]"
                   size={40}
@@ -87,134 +94,79 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <div id="skills" className="w-full lg:h-screen p-2">
+      <div id="skills" className="w-full mt-12 p-2 min-h-screen">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-          <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+          <p className="pt-28 text-xl tracking-widest uppercase text-[#5651e5]">
             Skills
           </p>
-          <h2 className="py-4">What I Can Do</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={Firebase} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>Node js</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={NextJS} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>Next</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={Javascript} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>JavaScript</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={ReactImg} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>React</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={Tailwind} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>Tailwind Css</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={Html} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>Html5</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={Github} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>Github</h3>
-                </div>
-              </div>
-            </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="grid grid-cols-2 gap-4 justify-center items-center">
-                <div className="m-auto">
-                  <Image src={Css} width="64px" height="64px" alt="/" />
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <h3>Css</h3>
-                </div>
-              </div>
-            </div>
+          <h2 className="py-4 mt-6">What I Can Do</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16">
+            <Skill icon={Firebase}> Nodejs</Skill>
+            <Skill icon={NextJS}> Nextjs</Skill>
+            <Skill icon={Javascript}>JavaScript</Skill>
+            <Skill icon={ReactImg}> React</Skill>
+            <Skill icon={Tailwind}>Tailwind Css</Skill>
+            <Skill icon={Firebase}>MongoDb</Skill>
+            <Skill icon={Html}>Html5</Skill>
+            <Skill icon={Css}>Css</Skill>
+            <Skill icon={Github}>Github</Skill>
           </div>
         </div>
       </div>
-      <div id="projects" className="w-full">
+      <div id="projects" className="w-full min-h-screen">
         <div className="max-w-[1240px] mx-auto px-2 py-16">
-          <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+          <p className="pt-16 text-xl tracking-widest uppercase text-[#5651e5]">
             Projects
           </p>
           <h2 className="py-4">Sample projects</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectItem
-              title="Linkmasters"
-              backgroundImg={propertyImg}
-              projectUrl="/property"
-              tech="Next JS"
+              title="Mwangeka"
+              backgroundImg={mwangekaPortfolio}
+              projectUrl="/portfolio"
+              tech="Next Js &#38; Tailwind Css"
+            >
+              Developer Portfolio
+            </ProjectItem>
+            <ProjectItem
+              title="Gadget Masters"
+              backgroundImg={gadgetMasters}
+              projectUrl="/gadgetmasters"
+              tech="Next JS &#38; Tailwind Css"
+            >
+              Business Website
+            </ProjectItem>
+            <ProjectItem
+              title="pizza shop"
+              backgroundImg={pizzaApp}
+              projectUrl="/pizzaapp"
+              tech="Next JS &#38; Tailwind Css"
             >
               E-commerce web app
             </ProjectItem>
             <ProjectItem
-              title="Gadget masters"
-              backgroundImg={cryptoImg}
-              projectUrl="/crypto"
+              title="Linkmasters"
+              backgroundImg={gadgetMasters}
+              projectUrl="/linkmasters"
               tech="Nextjs &#38; Tailwindcss"
             >
               Business website
             </ProjectItem>
             <ProjectItem
-              title="Mwangeka's portfolio"
+              title="Travel Buddy"
               backgroundImg={netflixImg}
-              projectUrl="/netflix"
+              projectUrl="/travelcompanion"
               tech="React JS"
             >
-              Developer Portfolio
+              Travel App
             </ProjectItem>
             <ProjectItem
-              title="Travel buddy"
+              title="TAlkMent"
               backgroundImg={twitchImg}
-              projectUrl="/twitch"
+              projectUrl="/chatapp"
               tech="Next JS"
             >
-              Travel companion webapp
+              Chatt App
             </ProjectItem>
           </div>
         </div>

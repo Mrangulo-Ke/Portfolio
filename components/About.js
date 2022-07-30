@@ -38,19 +38,19 @@ export default function About() {
     <div
       ref={refContainer}
       id="about"
-      className="bg-black text-white w-full h-screen p-2 flex items-center py-16"
+      className="bg-black text-white w-full min-h-screen p-2 flex flex-col items-center py-16"
     >
+      <p className="uppercase mt-8 text-3xl lg:text-4xl tracking-widest ">
+        About Me
+      </p>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-3xl lg:text-4xl tracking-widest ">
-            About Me
-          </p>
+        <div className="col-span-2 text-center md:text-left">
           <h2 className="py-4">Who I Am</h2>
-          <div className="py-2 text-gray-200 leading-[1.15] text-xl lg:text-2xl">
-            &ldquo;I basically a javascript developer&rdquo;
+          <div className="py-2 mb-8 text-gray-200 leading-[1.15] text-xl lg:text-2xl">
+            &ldquo;I am basically a Javascript developer&rdquo;
           </div>
           <span
-            className={s.skillText}
+            className={`${s.skillText}inline-block text-xl lg:text-2xl text-left`}
             style={{
               opacity: opacityForBlock(progress, 0),
             }}
@@ -59,7 +59,7 @@ export default function About() {
             freelancer platform for the past two &#38; half years until April,
             2022.
             <span
-              className={`${s.skillText} inline-block after:content-['_'] text-xl lg:text-2xl`}
+              className={`${s.skillText} inline-block after:content-['_'] text-xl text-left lg:text-2xl`}
               style={{
                 opacity: opacityForBlock(progress, 1),
               }}
@@ -71,7 +71,7 @@ export default function About() {
             </span>
           </span>
           <span
-            className={`${s.skillText} inline-block`}
+            className={`${s.skillText} inline-block text-xl lg:text-2xl text-left`}
             style={{
               opacity: opacityForBlock(progress, 2),
             }}
