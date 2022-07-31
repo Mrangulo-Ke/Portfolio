@@ -5,7 +5,7 @@ import cryptoImg from '../public/assets/projects/crypto.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-export default function () {
+export default function ChatApp() {
   return (
     <Layout>
       <div className="w-full">

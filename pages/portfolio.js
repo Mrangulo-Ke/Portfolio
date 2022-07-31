@@ -19,8 +19,8 @@ export default function Portfolio() {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2">Property Finder</h2>
-            <h3>React JS / Tailwind / Firebase</h3>
+            <h2 className="py-2">My Portfolio</h2>
+            <h3>Next JS / Tailwind / Firebase</h3>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function Portfolio() {
               <p className="text-center font-bold pb-2">Technologies</p>
               <div className="grid grid-cols-3 md:grid-cols-1">
                 <p className="text-gray-600 py-2 flex items-center">
-                  <RiRadioButtonFill className="pr-1" /> React
+                  <RiRadioButtonFill className="pr-1" /> Next js
                 </p>
                 <p className="text-gray-600 py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" /> Tailwind
@@ -70,7 +70,7 @@ export default function Portfolio() {
                   <RiRadioButtonFill className="pr-1" /> Firebase
                 </p>
                 <p className="text-gray-600 py-2 flex items-center">
-                  <RiRadioButtonFill className="pr-1" /> Google API
+                  <RiRadioButtonFill className="pr-1" /> headlessui
                 </p>
                 <p className="text-gray-600 py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" /> Zillow API

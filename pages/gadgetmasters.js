@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import gadgetMasters from '../public/assets/projects/gadgetmasters.png';
 
-export default function () {
+export default function GadgetMasters() {
   return (
     <Layout>
       <div className="w-full">

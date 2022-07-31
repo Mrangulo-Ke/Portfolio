@@ -5,7 +5,7 @@ import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import pizzaApp from '../public/assets/projects/pizzaapp.png';
 
-export default function () {
+export default function PizzaApp() {
   return (
     <Layout>
       <div className="w-full">

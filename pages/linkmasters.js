@@ -5,7 +5,7 @@ import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-export default function () {
+export default function LinkMasters() {
   return (
     <Layout>
       <div className="w-full">

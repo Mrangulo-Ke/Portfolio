@@ -48,7 +48,7 @@ export default function Home() {
               I love building responsive web applications mostly using
               javascript with its libiraries &#38; frameworks .
             </p>
-            <div className="flex items-center justify-between max-w-[330px] m-auto py-6">
+            <div className="items-center justify-between max-w-[330px] m-auto py-6 hidden md:flex ">
               <a
                 href="https://www.linkedin.com/in/clint-briley-50056920a/"
                 target="_blank"
@@ -96,10 +96,10 @@ export default function Home() {
       <About />
       <div id="skills" className="w-full mt-12 p-2 min-h-screen">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-          <p className="pt-28 text-xl tracking-widest uppercase text-[#5651e5]">
+          <p className="pt-28 uppercase text-3xl lg:text-4xl tracking-widest text-center">
             Skills
           </p>
-          <h2 className="py-4 mt-6">What I Can Do</h2>
+          <h2 className="py-4 mt-6 text-center">What I Can Do</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16">
             <Skill icon={Firebase}> Nodejs</Skill>
             <Skill icon={NextJS}> Nextjs</Skill>
@@ -115,10 +115,10 @@ export default function Home() {
       </div>
       <div id="projects" className="w-full min-h-screen">
         <div className="max-w-[1240px] mx-auto px-2 py-16">
-          <p className="pt-16 text-xl tracking-widest uppercase text-[#5651e5]">
+          <p className="pt-10 pb-4  uppercase text-3xl lg:text-4xl tracking-widest text-center">
             Projects
           </p>
-          <h2 className="py-4">Sample projects</h2>
+          <h2 className="py-4 text-center">Sample projects</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectItem
               title="Mwangeka"

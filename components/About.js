@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import s from '../styles/skills.module.css';
 
-import AboutImg from '../public/assets/about.jpg';
+import AboutImg from '../public/assets/ab.jpg';
 import { useContext } from 'react';
 import { createContext, useRef } from 'react';
 

@@ -5,7 +5,7 @@ import propertyImg from '../public/assets/projects/property.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-export default function () {
+export default function TravelCompanion() {
   return (
     <Layout>
       <div className="w-full">
