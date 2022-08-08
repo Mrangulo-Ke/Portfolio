@@ -12,7 +12,6 @@ import { FooterLink, SocialLink } from './Links';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Logo from '../public/assets/mwangekablacklogo.svg';
-import LogoWhite from '../public/assets/mwangekawhitelogo.svg';
 
 export default function Layout({ title, children }) {
   const [nav, setNav] = useState(false);
@@ -110,11 +109,11 @@ export default function Layout({ title, children }) {
                       `}
                       >
                         {open ? (
-                          <div className="p-5">
+                          <div className="p-5 text-[#5651e5]">
                             <AiOutlineClose />
                           </div>
                         ) : (
-                          <div className=" p-5 ">
+                          <div className=" p-5 text-[#5651e5]">
                             <AiOutlineMenu />
                           </div>
                         )}

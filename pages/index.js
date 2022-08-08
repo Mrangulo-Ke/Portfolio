@@ -25,6 +25,7 @@ import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
 import About from '../components/About';
 import { Skill } from '../components/Skill';
 import { ProjectBackground } from '../components/ProjectTile';
+import { RiProfileLine } from 'react-icons/ri';
 
 export default function Home() {
   return (
@@ -44,9 +45,14 @@ export default function Home() {
             <h1 className="py-2 text-veryDarkBlue drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] font-bold text-4xl lg:text-5xl">
               A Full-Stack Web Developer
             </h1>
-            <p className="py-4 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-gray-600 sm:max-w-[70%] m-auto text-xl lg:text-2xl">
-              I love building responsive web applications mostly using
-              javascript with its libiraries &#38; frameworks .
+            <p
+              className="py-4 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-gray-600 
+            sm:max-w-[70%] m-auto text-lg lg:text-xl"
+            >
+              I enjoy building responsive web apps & designs using HTML5, CSS3,
+              JavaScript, Next.js, Nodejs, React.js, Mongo DB, TailwindCss
+              Charka UI, Restful APIs.., I have been working on the web for
+              around 3 years building freelance/learning projects.
             </p>
             <div className="items-center justify-between max-w-[330px] m-auto py-6 hidden md:flex ">
               <a
@@ -54,7 +60,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
               </a>
@@ -63,18 +69,18 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <FaGithub />
                 </div>
               </a>
               <Link href="/#contact">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
               </Link>
               <Link href="/cv">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <RiProfileLine />
                 </div>
               </Link>
             </div>
