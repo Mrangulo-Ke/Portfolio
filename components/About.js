@@ -38,19 +38,19 @@ export default function About() {
     <div
       ref={refContainer}
       id="about"
-      className="bg-black text-white w-full min-h-screen p-2 flex flex-col items-center py-16"
+      className="bg-black text-gray-400 w-full min-h-screen p-2 flex flex-col items-center py-16"
     >
-      <p className="uppercase mt-8 text-3xl lg:text-4xl tracking-widest ">
+      <p className="uppercase text-gray-50 font-helvetica mt-8 text-3xl lg:text-4xl tracking-widest">
         About Me
       </p>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 text-center md:text-left">
-          <h2 className="py-4">Who I Am</h2>
-          <div className="py-2 mb-8 text-gray-200 leading-[1.15] text-xl lg:text-2xl">
+          <h2 className="py-4 text-gray-100">Who I Am</h2>
+          <div className="py-2 font-coolvetica mb-8 text-gray-200 text-xl lg:text-2xl">
             &ldquo;I am basically a Javascript developer&rdquo;
           </div>
           <span
-            className={`${s.skillText}inline-block text-xl lg:text-2xl text-left`}
+            className={`${s.skillText} inline-block text-xl after:content-['_']  lg:text-2xl text-left`}
             style={{
               opacity: opacityForBlock(progress, 0),
             }}
@@ -61,7 +61,7 @@ export default function About() {
             <span
               className={`${s.skillText} inline-block after:content-['_'] text-xl text-left lg:text-2xl`}
               style={{
-                opacity: opacityForBlock(progress, 1),
+                opacity: opacityForBlock(progress, 0),
               }}
             >
               During that time I gained great experince while working at several
@@ -73,7 +73,7 @@ export default function About() {
           <span
             className={`${s.skillText} inline-block text-xl lg:text-2xl text-left`}
             style={{
-              opacity: opacityForBlock(progress, 2),
+              opacity: opacityForBlock(progress, 0),
             }}
           >
             I am computer science student at Maseno University, Kisumu ,Kenya.I
@@ -82,7 +82,7 @@ export default function About() {
             games and traveling.
           </span>
           <Link href="/#projects">
-            <p className="py-2 text-gray-200 underline cursor-pointer">
+            <p className="py-2 text-blueDark-0 underline cursor-pointer hidden md:flex">
               My latest projects.
             </p>
           </Link>

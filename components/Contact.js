@@ -1,10 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import ContactImg from '../public/assets/contact.jpg';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -23,8 +19,8 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full bg-black text-white min-h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 pt-24 w-full ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+      <div className="max-w-[1240px] text-center m-auto px-2 py-16 pt-24 w-full ">
+        <p className="text-2xl  tracking-widest uppercase text-white font-helvetica">
           Contact
         </p>
         <h2 className="py-4">Get in Touch</h2>
@@ -96,7 +92,12 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="flex justify-center items-center">
-              <button className="p-4 text-gray-100 mt-4">Send Message</button>
+              <button
+                className="p-4 text-veryDarkBlue mt-4 bg-white hover:text-white hover:bg-black 
+              hover:border-2 hover:border-white"
+              >
+                Send Message
+              </button>
             </div>
           </form>
         </div>

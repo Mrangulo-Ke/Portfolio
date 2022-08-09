@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Contact from '../components/Contact';
 import Layout from '../components/Layout';
 import { ProjectItem } from '../components/ProjectItem';
 
-import Html from '../public/assets/skills/html.png';
+import Html from '../public/skills/html.svg';
+import Git from '../public/skills/git.svg';
+import Ruby from '../public/skills/ruby.svg';
+import Django from '../public/skills/django.svg';
+import MongoDB from '../public/skills/mongoDB.svg';
 import Css from '../public/assets/skills/css.png';
 import Javascript from '../public/assets/skills/javascript.png';
 import ReactImg from '../public/assets/skills/react.png';
@@ -16,7 +19,6 @@ import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png';
 import pizzaApp from '../public/assets/projects/pizzaapp.png';
-import cryptoImg from '../public/assets/projects/crypto.jpg';
 import netflixImg from '../public/assets/projects/netflix.jpg';
 import mwangekaPortfolio from '../public/assets/projects/mwangeka.png';
 import gadgetMasters from '../public/assets/projects/gadgetmasters.png';
@@ -101,26 +103,29 @@ export default function Home() {
       <About />
       <div id="skills" className="w-full mt-12 p-2 min-h-screen">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-          <p className="pt-28 uppercase text-3xl lg:text-4xl tracking-widest text-center">
+          <p className="pt-28 uppercase font-helvetica text-3xl lg:text-4xl tracking-widest text-center">
             Skills
           </p>
           <h2 className="py-4 mt-6 text-center">What I Can Do</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16">
-            <Skill icon={Firebase}> Nodejs</Skill>
-            <Skill icon={NextJS}> Nextjs</Skill>
-            <Skill icon={Javascript}>JavaScript</Skill>
-            <Skill icon={ReactImg}> React</Skill>
-            <Skill icon={Tailwind}>Tailwind Css</Skill>
-            <Skill icon={Firebase}>MongoDb</Skill>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-16">
             <Skill icon={Html}>Html5</Skill>
             <Skill icon={Css}>Css</Skill>
+            <Skill icon={Javascript}>JavaScript</Skill>
+            <Skill icon={MongoDB}>MongoDB</Skill>
+            <Skill icon={ReactImg}> React</Skill>
+            <Skill icon={Firebase}> Nodejs</Skill>
+            <Skill icon={NextJS}> Nextjs</Skill>
+            <Skill icon={Tailwind}>Tailwind Css</Skill>
             <Skill icon={Github}>Github</Skill>
+            <Skill icon={Ruby}>Ruby</Skill>
+            <Skill icon={Django}>Django</Skill>
+            <Skill icon={Git}>Git</Skill>
           </div>
         </div>
       </div>
       <div id="projects" className="w-full min-h-screen">
         <div className="max-w-[1240px] mx-auto px-2 py-16">
-          <p className="pt-10 pb-4  uppercase text-3xl lg:text-4xl tracking-widest text-center">
+          <p className="pt-10 pb-4 font-helvetica uppercase text-3xl lg:text-4xl tracking-widest text-center">
             Projects
           </p>
           <h2 className="py-4 text-center">Sample projects</h2>

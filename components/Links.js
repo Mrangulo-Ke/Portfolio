@@ -15,7 +15,7 @@ export const SocialLink = ({ href, children }) => (
 export const FooterLink = ({ href, children }) => (
   <Link href={href}>
     <div
-      className="rounded-full shadow-lg shadow-veryDarkBlue 
+      className="drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-veryDarkBlue shadow-veryDarkBlue 
     p-3 cursor-pointer hover:scale-105 ease-in duration-700"
     >
       {children}

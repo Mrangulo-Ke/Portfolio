@@ -1,10 +1,20 @@
 import Layout from '../components/Layout';
-import Image from 'next/image';
 import React from 'react';
-import cryptoImg from '../public/assets/projects/crypto.jpg';
-import { RiRadioButtonFill } from 'react-icons/ri';
-import Link from 'next/link';
-
-export default function ChatApp() {
-  return <Layout>coming soon</Layout>;
+import { ProjectDetail } from '../components/ProjectDetail';
+export default function Portfolio() {
+  return (
+    <Layout title="Project Chat App">
+      <div className="grid gid-cols-1 lg:grid-cols-2 w-full min-h-screen top-0 sticky">
+        <div className="bg-black h-[30vh] lg:h-auto">
+          <ProjectDetail
+            title="Chat App"
+            tech="Next JS & Taiwind Css"
+            githuburl="/"
+            hosturl="/"
+          ></ProjectDetail>
+        </div>
+        <div className="bg-white h-[70vh] lg:min-h-screen"></div>
+      </div>
+    </Layout>
+  );
 }
