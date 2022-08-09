@@ -16,9 +16,9 @@ export const ScrollContext = createContext({ scrollY: 1 });
 
 export default function About() {
   const { scrollY } = useContext(ScrollContext);
-  const refContainer = useRef(null);
+  const refContainer = useRef();
 
-  const numOfPages = 3;
+  const numOfPages = 4;
   let progress = 0;
 
   const { current: elContainer } = refContainer;
