@@ -24,7 +24,6 @@ import twitchImg from '../public/assets/projects/twitch.jpg';
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
 import About from '../components/About';
 import { Skill } from '../components/Skill';
-import { ProjectBackground } from '../components/ProjectTile';
 import { RiProfileLine } from 'react-icons/ri';
 
 export default function Home() {
@@ -36,22 +35,22 @@ export default function Home() {
       >
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
           <div className="text-center">
-            <p className="uppercase text-sm tracking-widest text-gray-600">
+            <p className="uppercase font-helvetica text-sm tracking-widest text-gray-600">
               LET&#39;S Code SOMETHING Great TOGETHER
             </p>
             <h1 className="py-4 text-veryDarkBlue drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] font-bold text-4xl lg:text-5xl">
-              Hi, I&#39;m <span className="text-[#5651e5]"> Patrick</span>
+              Hi, I&#39;m <span className="text-purpleDark-0"> Patrick</span>
             </h1>
             <h1 className="py-2 text-veryDarkBlue drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] font-bold text-4xl lg:text-5xl">
               A Full-Stack Web Developer
             </h1>
             <p
-              className="py-4 drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-gray-600 
+              className="py-4  text-gray-600 
             sm:max-w-[70%] m-auto text-lg lg:text-xl"
             >
               I enjoy building responsive web apps & designs using HTML5, CSS3,
-              JavaScript, Next.js, Nodejs, React.js, Mongo DB, TailwindCss
-              Charka UI, Restful APIs.., I have been working on the web for
+              JavaScript, Next.js, Nodejs, React.js, Mongo DB, Tailwind Css,
+              Charka UI, Restful APIs... I have been working on the web for
               around 3 years building freelance/learning projects.
             </p>
             <div className="items-center justify-between max-w-[330px] m-auto py-6 hidden md:flex ">
@@ -60,8 +59,8 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedinIn />
+                <div className="drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-blueDark-0 shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaLinkedinIn size={24} />
                 </div>
               </a>
               <a
@@ -69,18 +68,18 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub />
+                <div className="drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-blueDark-0 shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaGithub size={24} />
                 </div>
               </a>
               <Link href="/#contact">
-                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail />
+                <div className="drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-blueDark-0 shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <AiOutlineMail size={24} />
                 </div>
               </Link>
               <Link href="/cv">
-                <div className="rounded-full text-[#5651e5] shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <RiProfileLine />
+                <div className="drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-blueDark-0 shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <RiProfileLine size={24} />
                 </div>
               </Link>
             </div>
@@ -91,7 +90,7 @@ export default function Home() {
             <a>
               <div className="p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleDown
-                  className="text-[#5651e5]"
+                  className="text-blueDark-0"
                   size={40}
                 />
               </div>

@@ -9,7 +9,6 @@ import { useEffect } from 'react';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FooterLink, SocialLink } from './Links';
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 import Logo from '../public/assets/mwangekablacklogo.svg';
 
@@ -66,7 +65,7 @@ export default function Layout({ title, children }) {
                 </Link>
               </div>
               {/* Menu Items */}
-              <div className="space-x-6 flex">
+              <div className="space-x-6 flex font-helvetica">
                 <Link href="/">
                   <a className="uppercase hover:text-darkGrayishBlue">Home</a>
                 </Link>
@@ -109,11 +108,11 @@ export default function Layout({ title, children }) {
                       `}
                       >
                         {open ? (
-                          <div className="p-5 text-[#5651e5]">
+                          <div className="p-5 text-blueDark-0">
                             <AiOutlineClose />
                           </div>
                         ) : (
-                          <div className=" p-5 text-[#5651e5]">
+                          <div className=" p-5 text-blueDark-0">
                             <AiOutlineMenu />
                           </div>
                         )}
@@ -135,7 +134,7 @@ export default function Layout({ title, children }) {
                     >
                       <Menu.Items
                         className="absolute origin-top-left left-0 top-0 w-[75%] 
-                        sm:w-[60%] md:w-[45%] bg-white rounded-md shadow-md"
+                        sm:w-[60%] md:w-[45%] bg-white rounded-md shadow-md font-helvetica"
                       >
                         <Menu.Item>
                           {({ active }) => (
@@ -233,14 +232,8 @@ export default function Layout({ title, children }) {
                             </Link>
                           )}
                         </Menu.Item>
-
-                        <div className="border-t border-gray-300 my-2">
-                          <p className="w-[85%] md:w-[90%] py-4 px-4 text-xs">
-                            Let&#39;s build something legendary together
-                          </p>
-                        </div>
-                        <div className="pt-4 px-4">
-                          <p className="uppercase tracking-widest text-sm text-[#5651e5]">
+                        <div className="border-t border-gray-300 my-2 pt-4 px-4">
+                          <p className="tracking-widest font-helvetica text-sm text-redDark-0">
                             Get In Touch
                           </p>
                           <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
