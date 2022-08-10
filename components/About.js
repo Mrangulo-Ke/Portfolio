@@ -47,7 +47,7 @@ export default function About() {
         <div className="col-span-2 text-center md:text-left">
           <h2 className="py-4 text-gray-100">Who I Am</h2>
           <div className="py-2 font-coolvetica mb-8 text-gray-200 text-xl lg:text-2xl">
-            &ldquo;I am basically a Javascript developer&rdquo;
+            &ldquo;Basically I am Javascript developer&rdquo;
           </div>
           <span
             className={`${s.skillText} inline-block text-xl after:content-['_']  lg:text-2xl text-left`}
@@ -64,10 +64,10 @@ export default function About() {
                 opacity: opacityForBlock(progress, 0),
               }}
             >
-              During that time I gained great experince while working at several
-              web projects ranging from complex e-commerce web-apps to simple
-              portfolios and landing.I recently decided to switch to the upwork
-              freelancing platform.
+              During that time I gained great experience while working at
+              several web projects ranging from complex e-commerce web-apps to
+              simple portfolios and landing pages.I recently decided to switch
+              to the upwork freelancing platform.
             </span>
           </span>
           <span
