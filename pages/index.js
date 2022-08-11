@@ -19,10 +19,10 @@ import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png';
 import pizzaApp from '../public/assets/projects/pizzaapp.png';
-import netflixImg from '../public/assets/projects/netflix.jpg';
+import summerX from '../public/projects/summerX.png';
 import mwangekaPortfolio from '../public/assets/projects/mwangeka.png';
 import gadgetMasters from '../public/assets/projects/gadgetmasters.png';
-import twitchImg from '../public/assets/projects/twitch.jpg';
+
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi';
 import About from '../components/About';
 import { Skill } from '../components/Skill';
@@ -155,29 +155,29 @@ export default function Home() {
               E-commerce web app
             </ProjectItem>
             <ProjectItem
+              title="SummerX"
+              backgroundImg={summerX}
+              projectUrl="/summerX"
+              tech="Next JS"
+            >
+              SummerX
+            </ProjectItem>
+            {/* <ProjectItem
               title="Linkmasters"
               backgroundImg={gadgetMasters}
               projectUrl="/linkmasters"
               tech="Nextjs &#38; Tailwindcss"
             >
               Business website
-            </ProjectItem>
-            <ProjectItem
+            </ProjectItem> */}
+            {/* <ProjectItem
               title="Travel Buddy"
               backgroundImg={netflixImg}
               projectUrl="/travelcompanion"
               tech="React JS"
             >
               Travel App
-            </ProjectItem>
-            <ProjectItem
-              title="TAlkMent"
-              backgroundImg={twitchImg}
-              projectUrl="/chatapp"
-              tech="Next JS"
-            >
-              Chatt App
-            </ProjectItem>
+            </ProjectItem> */}
           </div>
         </div>
       </div>

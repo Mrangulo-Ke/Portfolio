@@ -1,20 +1,21 @@
 import Layout from '../components/Layout';
 import React from 'react';
 import { ProjectDetail } from '../components/ProjectDetail';
+
+import gadgetMaster from '../public/projects/gadgetMaster.png';
+import mobileGadgetMaster from '../public/projects/mobileGadgetMaster.png';
+
 export default function Portfolio() {
   return (
     <Layout title="Project Business Agency">
-      <div className="grid gid-cols-1 lg:grid-cols-2 w-full min-h-screen top-0 sticky">
-        <div className="bg-black h-[30vh] lg:h-auto">
-          <ProjectDetail
-            title="Gadget Masters"
-            tech="Next JS & Taiwind Css"
-            githuburl="/"
-            hosturl="/"
-          ></ProjectDetail>
-        </div>
-        <div className="bg-white h-[70vh] lg:min-h-screen"></div>
-      </div>
+      <ProjectDetail
+        title="Gadget Masters"
+        tech="Next JS & Taiwind Css"
+        githuburl="/"
+        hosturl="/"
+        img={gadgetMaster}
+        mobileimg={mobileGadgetMaster}
+      ></ProjectDetail>
     </Layout>
   );
 }
