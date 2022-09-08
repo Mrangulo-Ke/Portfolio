@@ -41,7 +41,7 @@ export default function Layout({ title, children }) {
           name="description"
           content="A full-stack web developer who loves working with JavaScript."
         />
-        <link rel="icon" href="/fav.png" />
+        <link rel="icon" href="/fav.svg" />
       </Head>
       <div>
         {/* Navbar */}

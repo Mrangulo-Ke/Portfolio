@@ -14,7 +14,7 @@ export default function Portfolio() {
         githuburl="/"
         hosturl="/"
         img={gadgetMaster}
-        mobileimg={mobileGadgetMaster}
+        mobileimg={gadgetMaster}
       ></ProjectDetail>
     </Layout>
   );

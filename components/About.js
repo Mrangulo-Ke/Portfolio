@@ -66,8 +66,8 @@ export default function About() {
             >
               During that time I gained great experience while working at
               several web projects ranging from complex e-commerce web-apps to
-              simple portfolios and landing pages.I recently decided to switch
-              to the upwork freelancing platform.
+              simple portfolios and landing pages.I recently switched to the
+              upwork freelancing platform.
             </span>
           </span>
           <span

@@ -14,7 +14,7 @@ export default function Portfolio() {
         githuburl="/"
         hosturl="/"
         img={pizzaApp}
-        mobileimg={mobilePizzaApp}
+        mobileimg={pizzaApp}
       ></ProjectDetail>
     </Layout>
   );

@@ -20,6 +20,7 @@ import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png';
 import pizzaApp from '../public/assets/projects/pizzaapp.png';
 import summerX from '../public/projects/summerX.png';
+import linkMasters from '../public/projects/linkMasters.png';
 import mwangekaPortfolio from '../public/assets/projects/mwangeka.png';
 import gadgetMasters from '../public/assets/projects/gadgetmasters.png';
 
@@ -53,7 +54,7 @@ export default function Home() {
               I enjoy building responsive web apps & designs using HTML5, CSS3,
               JavaScript, Next.js, Nodejs, React.js, Mongo DB, Tailwind Css,
               Charka UI, Restful APIs... I have been working on the web for
-              around 3 years building freelance/learning projects.
+              around 2 years building freelance/learning projects.
             </p>
             <div className="items-center justify-between max-w-[330px] m-auto py-6 hidden md:flex ">
               <a
@@ -129,7 +130,7 @@ export default function Home() {
             Projects
           </p>
           <h2 className="py-4 text-center">Sample projects</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <ProjectItem
               title="Mwangeka"
               backgroundImg={mwangekaPortfolio}
@@ -146,7 +147,7 @@ export default function Home() {
             >
               Business Website
             </ProjectItem>
-            <ProjectItem
+            {/* <ProjectItem
               title="pizza shop"
               backgroundImg={pizzaApp}
               projectUrl="/pizzaapp"
@@ -161,15 +162,15 @@ export default function Home() {
               tech="Next JS"
             >
               SummerX
-            </ProjectItem>
-            {/* <ProjectItem
-              title="Linkmasters"
-              backgroundImg={gadgetMasters}
-              projectUrl="/linkmasters"
-              tech="Nextjs &#38; Tailwindcss"
-            >
-              Business website
             </ProjectItem> */}
+            <ProjectItem
+              title="Linkmasters"
+              backgroundImg={linkMasters}
+              projectUrl="/linkmasters"
+              tech="Next js, MongoDB, &#38; Tailwindcss"
+            >
+              E-commerce web app
+            </ProjectItem>
             {/* <ProjectItem
               title="Travel Buddy"
               backgroundImg={netflixImg}
